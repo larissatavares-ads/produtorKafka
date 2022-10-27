@@ -1,5 +1,7 @@
 package br.com.oraculo.produtorKafka.controller;
 
+import br.com.oraculo.produtorKafka.model.OraculoModel;
+import br.com.oraculo.produtorKafka.model.ProducerModel;
 import org.springframework.web.bind.annotation.*;
 import br.com.oraculo.produtorKafka.producer.KafkaService;
 
@@ -13,7 +15,7 @@ public class KafkaController {
     }
 
     @PostMapping("/publish")
-    public void send(@RequestParam String message){
+    public void send(@RequestBody OraculoModel message){
         topicProducer.send(message);
     }
 }
