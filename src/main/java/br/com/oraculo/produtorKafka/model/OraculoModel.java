@@ -1,25 +1,38 @@
 package br.com.oraculo.produtorKafka.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import java.util.List;
+import java.sql.Date;
+import java.sql.Timestamp;
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class OraculoModel {
-    public Origem Origem;
-    public Datas Datas;
-    public IdentificadorLoteSPA IdentificadorLoteSPA;
-    public List<com.oraculo.oraculoservice.model.TransacaoSPA> Transacoes;
+    public String LogSystem;
+    public String Application;
+    public String DataRequest;
+    public String Direction;
+    public Integer LogSystemId;
+    public Integer ApplicationId;
+    public ApplicationLogMessage ApplicationLogMessage;
+    public String Status;
 
     @Override
     public String toString() {
         return "OraculoModel{" +
-                "Origem=" + Origem +
-                ", Datas=" + Datas +
-                ", IdentificadorLoteSPA=" + IdentificadorLoteSPA +
-                ", Transacoes=" + Transacoes +
-                '}';
+                "LogSystem=" + LogSystem +
+                ", Application=" + Application +
+                ", DataRequest=" + DataRequest +
+                ", Direction=" + Direction +
+                ", LogSystemId=" + LogSystemId +
+                ", ApplicationId=" + ApplicationId +
+                ", ApplicationLogMessage=" + ApplicationLogMessage +
+                ", Status=" + Status +
+                "}";
     }
 }

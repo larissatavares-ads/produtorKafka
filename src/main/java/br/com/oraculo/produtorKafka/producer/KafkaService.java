@@ -1,7 +1,6 @@
 package br.com.oraculo.produtorKafka.producer;
 
 import br.com.oraculo.produtorKafka.model.OraculoModel;
-import br.com.oraculo.produtorKafka.model.ProducerModel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
