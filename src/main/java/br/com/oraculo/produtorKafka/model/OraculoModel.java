@@ -19,7 +19,7 @@ public class OraculoModel {
     public String Direction;
     public Integer LogSystemId;
     public Integer ApplicationId;
-    public ApplicationLogMessage ApplicationLogMessage;
+    public String ApplicationLogMessage;
     public String Status;
 
     @Override
