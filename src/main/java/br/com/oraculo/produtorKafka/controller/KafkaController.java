@@ -1,6 +1,5 @@
 package br.com.oraculo.produtorKafka.controller;
 
-import br.com.oraculo.produtorKafka.model.ApplicationLogMessage;
 import br.com.oraculo.produtorKafka.model.OraculoModel;
 import org.springframework.web.bind.annotation.*;
 import br.com.oraculo.produtorKafka.producer.KafkaService;

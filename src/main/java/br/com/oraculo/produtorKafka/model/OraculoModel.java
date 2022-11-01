@@ -13,24 +13,24 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 @NoArgsConstructor
 public class OraculoModel {
-    public String LogSystem;
+    public String System;
     public String Application;
-    public String DataRequest;
+    public String DateLogRequest;
+    public String OraculoID;
     public String Direction;
-    public Integer LogSystemId;
-    public Integer ApplicationId;
+    public String ApplicationID;
     public String ApplicationLogMessage;
     public String Status;
 
     @Override
     public String toString() {
         return "OraculoModel{" +
-                "LogSystem=" + LogSystem +
+                "System=" + System +
                 ", Application=" + Application +
-                ", DataRequest=" + DataRequest +
+                ", DateLogRequest=" + DateLogRequest +
+                ", OraculoID=" + OraculoID +
                 ", Direction=" + Direction +
-                ", LogSystemId=" + LogSystemId +
-                ", ApplicationId=" + ApplicationId +
+                ", ApplicationId=" + ApplicationID +
                 ", ApplicationLogMessage=" + ApplicationLogMessage +
                 ", Status=" + Status +
                 "}";
